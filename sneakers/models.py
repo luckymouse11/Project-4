@@ -8,6 +8,10 @@ class Sneaker(models.Model):
     release_date = models.PositiveIntegerField(default=None)
     cost = models.FloatField(default=None)
     image = models.CharField(max_length=200, default=None)
+    colour = models.ManyToManyField(
+        'colours.Colour',
+        related_name = 'colours'
+    )
 
     def __str__(self):
         return f"{self.brand} \"{self.model_name}\" released on {self.release_date} for £{self.cost}"
