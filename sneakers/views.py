@@ -11,6 +11,7 @@ from .serializers.populated import PopulatedSneakerSerializer
 
 # Create your views here.
 class SneakerListView(APIView):
+    permission_classes = (IsAuthenticatedOrReadOnly, )
 
     def get(self, _request):
         sneakers = Sneaker.objects.all()

@@ -3,104 +3,166 @@
   "model": "sneakers.sneaker",
   "pk": 1,
   "fields": {
-    "mode_name": "Dame 7 EXTPLY: Opponent Advisory",
+    "model_name": "Dame 7 EXTPLY: Opponent Advisory",
     "brand": "Adidas",
     "description": "The Dame 7 EXTPLY: Opponent Advisory shoes from adidas Basketball send a message to any opposition on the court. These basketball shoes pair a superlight Lightstrike midsole with an all-black upper that shows off a bright-white print communicating the only thing Dame wants you to know if you're trying to guard him: Opponent discretion is strongly advised. Don't say he didn't warn you.",
     "release_date": 2021,
-    "cost": 90,
-    "image": "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/b95e378027644f19b85eacee010c327d_9366/Dame_7_EXTPLY:_Opponent_Advisory_Shoes_Black_FY9939_01_standard.jpg",
-    "colour": ["Black", "White", "Red"]
+    "cost": 90.0,
+    "image": "oppadv.jpg",
+    "colour": [
+      1,
+      2,
+      3
+    ]
   }
 },
 {
   "model": "sneakers.sneaker",
   "pk": 2,
   "fields": {
-    "mode_name": "Air Jordan 1 High Retro Chicago",
+    "model_name": "Air Jordan 1 High Retro Chicago",
     "brand": "Nike",
-    "description": "The first Air Jordan was produced for Michael Jordan during his time with the Chicago Bulls in 1984 and designed by Peter C. Moore.[7] The red and black colorway of the Nike Air Ship, the prototype for the Jordan I, was later outlawed by then-NBA Commissioner David Stern for having very little white on them. (This rule, known as the \"51 percent\" rule, was repealed in the late 2000s.)",
+    "description": "The first Air Jordan was produced for Michael Jordan during his time with the Chicago Bulls in 1984 and designed by Peter C. Moore.[7] The red and black colorway of the Nike Air Ship, the prototype for the Jordan I, was later outlawed by then-NBA Commissioner David Stern for having very little white on them. (This rule, known as the \\\"51 percent\\\" rule, was repealed in the late 2000s.)",
     "release_date": 1985,
-    "cost": 33934,
-    "image": "https://static.nike.com/a/images/t_prod_ss/w_960,c_limit,f_auto/lxgedfocjc5owejiyhsa/air-jordan-1-retro-chicago-release-date.jpg",
-    "colour": ["Red", "White", "Black"]
+    "cost": 33934.0,
+    "image": "AJ1-chi.jpg",
+    "colour": [
+      1,
+      2,
+      3
+    ]
   }
 },
 {
   "model": "sneakers.sneaker",
   "pk": 3,
   "fields": {
-    "mode_name": "\"Gundam\" SB Dunk",
+    "model_name": "Gundam SB Dunk",
     "brand": "Nike",
     "description": "In the late 1970s, Gundam re-defined anime culture and launched the Tokyo, Japan-based brand's futuristic vision across the globe. Defined by a synergy between compelling storytelling and expert design, Gundam's work with animation and toy design shaped collector culture for decades and continues to inspire and innovate. The \"Gundam\" SB Dunk High is a testament to imagination and work ethic, and brings DIY inspiration and science-fiction fashion to an iconic line of eccentric SB Dunks. With a removable Swoosh—each stylised to dramatically alter the silhouette, depending on if you want to go bright or tactically clean—this sneaker is ready to suit up and go mobile. The \"Gundam\" Dunk honours tradition and the synergy between Nike SB and Gundam collector culture—from the toe box detailing, flashes of colour and the accompanying decal sheet that's recognisably real robotic.",
     "release_date": 2021,
     "cost": 99.95,
-    "image": "https://static.nike.com/a/images/t_prod_ss/w_960,c_limit,f_auto/8b86ab52-a734-4299-a4e8-735c8f4b7f0e/sb-dunk-high-gundam-release-date.jpg",
-    "colour": ["White", "Red", "Black", "Yellow"]
+    "image": "gundamSBDunk.jpg",
+    "colour": [
+      1,
+      2,
+      3,
+      4
+    ]
   }
 },
 {
   "model": "sneakers.sneaker",
   "pk": 4,
   "fields": {
-    "mode_name": "Zoom LeBron Soldier 10",
+    "model_name": "Zoom LeBron Soldier 10",
     "brand": "Nike",
     "description": "The Nike Zoom LeBron Soldier 10 debuted in 2016 as LeBron James' NBA Finals sneaker. The performance basketball model features three lockdown straps at the forefoot, midfoot and ankle, a Tri-layer foam upper with an embedded compression inner-sleeve, and Zoom Air in the heel and forefoot. LeBron James wore the Soldier 10 throughout the 2016 NBA Finals en route to his third overall NBA championship, his third NBA Finals MVP and the first NBA championship for the Cleveland Cavaliers.",
     "release_date": 2016,
-    "cost": 150,
-    "image": "https://images.solecollector.com/complex/image/upload/c_fill,f_auto,fl_lossy,q_auto,w_1100/nike-zoom-lebron-soldier-10-model_aypnja.jpg",
-    "colour": ["Black", "White", "Gold"]
+    "cost": 150.0,
+    "image": "LBJSoldier10.jpg",
+    "colour": [
+      1,
+      2,
+      5
+    ]
   }
 },
 {
   "model": "sneakers.sneaker",
   "pk": 5,
   "fields": {
-    "mode_name": "LeBron 18 Low",
+    "model_name": "LeBron 18 Low",
     "brand": "Nike",
     "description": "LeBron's high-performance engine needs a light yet strong frame to help harness and direct his force. The LeBron 18 Low brings back the 17's cushioning system to provide an optimal balance of comfort, impact cushioning and responsiveness. The upper combines a mix of lightweight materials, no-sew overlays and a structured heel to provide full-foot containment without sacrificing ankle mobility.",
     "release_date": 2021,
     "cost": 144.95,
-    "image": "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/9a05e0dc-b250-41aa-81b1-a47b9030d9c1/lebron-18-low-basketball-shoe-gjbhB8.png",
-    "colour": ["White"]
+    "image": "LBJ18-stewie.jpg",
+    "colour": [
+      2
+    ]
   }
 },
 {
   "model": "sneakers.sneaker",
   "pk": 6,
   "fields": {
-    "mode_name": "Old Skool",
+    "model_name": "Old Skool",
     "brand": "Vans",
     "description": "The first to bear the iconic side stripe, the Vans Old Skool is a low top, lace-up shoe. It is lined, has padded collars for support and flexibility, re-enforced toecaps to withstand repeated wear, and features the Vans signature waffle outsole for a firmer grip.",
     "release_date": 2016,
-    "cost": 65,
-    "image": "https://images.vans.com/is/image/VansEU/VN000D3HY28-HERO?$PDP-FULL-IMAGE$",
-    "colour": ["Black", "White"]
+    "cost": 65.0,
+    "image": "OldSkool.jpg",
+    "colour": [
+      1,
+      2
+    ]
   }
 },
 {
   "model": "sneakers.sneaker",
   "pk": 7,
   "fields": {
-    "mode_name": "Court Rider Rugrat",
+    "model_name": "Court Rider Rugrat",
     "brand": "Puma",
     "description": "The Court Rider Rugrat mixes design cues from PUMA's iconic Future Rider with colours and detailing inspired by the Rugrats, those cheeky toddlers we fell in love with in the '90s. With PUMA's technology under the hood delivering stability, traction and shock-absorbing bounce just where you need it, you'll be shooting hoops or hitting the streets in eye-catching style and comfort.",
     "release_date": 2021,
-    "cost": 85,
-    "image": "https://i0.wp.com/www.footfire.co.uk/wp-content/uploads/2021/04/puma-court-rider-rugrats-195698-01-where-to-buy-1.png?resize=580%2C725&ssl=1",
-    "colour": ["Black", "White", "Gold"]
+    "cost": 85.0,
+    "image": "puma-rugrat.jpg",
+    "colour": [
+      2,
+      4,
+      6,
+      7,
+      8
+    ]
   }
 },
 {
   "model": "sneakers.sneaker",
   "pk": 8,
   "fields": {
-    "mode_name": "Kobe 8 FTB",
+    "model_name": "Kobe 8 FTB",
     "brand": "Nike",
     "description": "Coming off two straight titles and another stop at the top of the podium, Kobe Bryant returned to Hollywood ready to keep working. His drive for victory remained continually evident, even influencing the innovative Kobe 8 he laced up in constant pursuit of victory.",
     "release_date": 2016,
-    "cost": 165,
-    "image": "https://images.solecollector.com/complex/image/upload/c_fill,f_auto,fl_lossy,q_auto,w_1100/nike-kobe-ftb-21_dvt0vg.jpg",
-    "colour": ["Purple"]
+    "cost": 165.0,
+    "image": "kobe8FTB.jpg",
+    "colour": [
+      6
+    ]
+  }
+},
+{
+  "model": "sneakers.sneaker",
+  "pk": 9,
+  "fields": {
+    "model_name": "Wallister",
+    "brand": "Macbeth",
+    "description": "A unique and modern style with understated details. Macbeth took a classic style one step further by designing an oxford upper on their signature low profile vulcanized outsole. For a more tailored look, materials play a key role and are applied as all over repeats with bindings, discreet linings and embroidered patches. With a custom heel and tongue logo patches, these shoes will provide a simple, yet stylish addition to your wardrobe",
+    "release_date": 2009,
+    "cost": 50.0,
+    "image": "wallister.jpg",
+    "colour": [
+      8,
+      1
+    ]
+  }
+},
+{
+  "model": "sneakers.sneaker",
+  "pk": 10,
+  "fields": {
+    "model_name": "Skytop Muska Red Carpet",
+    "brand": "Supra",
+    "description": "Cop some fresh style from Mr. Style himself with these Chad Muska Red Carpet Edition Supra Skytop skate shoes. Designed using a weather and abrasion resistant black Tuf high top upper for insane durability and a SupraFoam injected midsole for trustworthy impact protection so can go big worry-free.",
+    "release_date": 2010,
+    "cost": 120.0,
+    "image": "skytop-redcarpet.jpg",
+    "colour": [
+      1,
+      3
+    ]
   }
 }
 ]
