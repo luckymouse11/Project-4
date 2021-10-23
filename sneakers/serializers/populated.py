@@ -1,6 +1,9 @@
-from reviews.models import Review
 from .common import SneakerSerializer
-from reviews.serializers.common import ReviewSerializer
+from reviews.serializers.populated import PopulatedReviewSerializer
+from colours.serializers.common import ColourSerializer
+from jwt_auth.serializers.common import UserSerializer
 
 class PopulatedSneakerSerializer(SneakerSerializer):
-    reviews = ReviewSerializer(many=True)
+    reviews = PopulatedReviewSerializer(many=True)
+    colour = ColourSerializer(many=True)
+    owner = UserSerializer()
