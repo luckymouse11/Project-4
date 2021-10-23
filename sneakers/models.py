@@ -10,7 +10,12 @@ class Sneaker(models.Model):
     image = models.CharField(max_length=200, default=None)
     colour = models.ManyToManyField(
         'colours.Colour',
-        related_name = 'colours'
+        related_name = 'sneakers'
+    )
+    owner = models.ForeignKey(
+        'jwt_auth.User',
+        related_name = 'sneakers',
+        on_delete = models.CASCADE
     )
 
     def __str__(self):

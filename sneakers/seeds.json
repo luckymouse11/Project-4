@@ -164,5 +164,22 @@
       3
     ]
   }
+},
+{
+  "model": "sneakers.sneaker",
+  "pk": 11,
+  "fields": {
+    "model_name": "Stabil Next Gen Primeblue",
+    "brand": "adidas",
+    "description": "You already own the court. Lacing up these adidas Stabil Next Gen indoor shoes merely confirms your dominance. Heat-pressed sidewalls on their foot-hugging Primeknit upper will support you through every cut and sidestep. Underneath, EVA surrounds an energy-returning Boost midsole for the perfect blend of agility and stability.",
+    "release_date": 2021,
+    "cost": 120.0,
+    "image": "stabil.jpg",
+    "colour": [
+      1,
+      2,
+      3
+    ]
+  }
 }
 ]
