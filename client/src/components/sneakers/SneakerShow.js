@@ -37,7 +37,7 @@ const SneakerShow = ({ rotatingSneaker }) => {
               <div className="col-12 col-md-6">
                 <img src={sneaker.image} alt={sneaker.brand} className="col-12"/>
               </div>
-              <div className="col-12 col-md-6">
+              <div className="col-12 col-md-6 d-flex align-items-stretch">
                 <table className="table">
                   <tbody>
                     <tr>
