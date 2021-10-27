@@ -5,16 +5,18 @@ from rest_framework.exceptions import NotFound
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 from .models import Sneaker
-from .serializers import SneakerSerializer
+from .serializers.common import SneakerSerializer
+from .serializers.populated import PopulatedSneakerSerializer
 
 
 # Create your views here.
 class SneakerListView(APIView):
+    permission_classes = (IsAuthenticatedOrReadOnly, )
 
     def get(self, _request):
         sneakers = Sneaker.objects.all()
         print('Sneakers', sneakers)
-        serialized_sneakers = SneakerSerializer(sneakers, many=True)
+        serialized_sneakers = PopulatedSneakerSerializer(sneakers, many=True)
         print('Serializer', serialized_sneakers.data)
         return Response(serialized_sneakers.data, status=status.HTTP_200_OK)
 
@@ -41,7 +43,7 @@ class SneakerDetailView(APIView):
     # GET single sneaker
     def get(self, _request, pk):
             sneaker = Sneaker.objects.get(pk=pk)
-            serialized_sneaker = SneakerSerializer(sneaker)
+            serialized_sneaker = PopulatedSneakerSerializer(sneaker)
             return Response(serialized_sneaker.data, status=status.HTTP_200_OK)
 
 

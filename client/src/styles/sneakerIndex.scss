@@ -1,0 +1,30 @@
+.add-sneaker-button{
+  padding: 12px 20px;
+}
+.sneaker{
+  .card{
+    text-decoration: none;
+    .card-header{
+      background-color: $purple;
+      color: $lgrey;
+    }
+    .card-image{
+      width: 100%;
+      height: 350px;
+      background-color: $dgrey;
+      object-fit: cover;
+    }
+    .card-footer{
+      background-color: $yellow;
+      color: $purple;
+    }
+  }
+}
+
+.btn{
+  text-decoration: none;
+}
+
+.filter{
+  color: $dgrey;
+}

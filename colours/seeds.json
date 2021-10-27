@@ -1,0 +1,58 @@
+[
+{
+  "model": "colours.colour",
+  "pk": 1,
+  "fields": {
+    "name": "Black"
+  }
+},
+{
+  "model": "colours.colour",
+  "pk": 2,
+  "fields": {
+    "name": "White"
+  }
+},
+{
+  "model": "colours.colour",
+  "pk": 3,
+  "fields": {
+    "name": "Red"
+  }
+},
+{
+  "model": "colours.colour",
+  "pk": 4,
+  "fields": {
+    "name": "Yellow"
+  }
+},
+{
+  "model": "colours.colour",
+  "pk": 5,
+  "fields": {
+    "name": "Gold"
+  }
+},
+{
+  "model": "colours.colour",
+  "pk": 6,
+  "fields": {
+    "name": "Purple"
+  }
+},
+{
+  "model": "colours.colour",
+  "pk": 7,
+  "fields": {
+    "name": "Orange"
+  }
+},
+{
+  "model": "colours.colour",
+  "pk": 8,
+  "fields": {
+    "name": "Green"
+  }
+}
+]

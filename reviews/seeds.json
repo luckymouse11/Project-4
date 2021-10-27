@@ -1,0 +1,72 @@
+[
+{
+  "model": "reviews.review",
+  "pk": 1,
+  "fields": {
+    "text": "The REAL GOAT shoes, most comfortable basketball shoes to play in, max support",
+    "created_at": "2021-10-22T09:23:17.145Z",
+    "sneaker": 1,
+    "owner": 1
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 2,
+  "fields": {
+    "text": "For display only! Anime nerds only please!",
+    "created_at": "2021-10-22T09:23:38.121Z",
+    "sneaker": 3,
+    "owner": 1
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 3,
+  "fields": {
+    "text": "Comfy vegan trainers for your everyday skateboarding needs",
+    "created_at": "2021-10-22T09:24:04.622Z",
+    "sneaker": 9,
+    "owner": 1
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 4,
+  "fields": {
+    "text": "Nice try puma",
+    "created_at": "2021-10-22T09:24:12.752Z",
+    "sneaker": 7,
+    "owner": 1
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 5,
+  "fields": {
+    "text": "Stylish but bulky. Could do with my cushioning",
+    "created_at": "2021-10-22T09:24:38.484Z",
+    "sneaker": 10,
+    "owner": 1
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 6,
+  "fields": {
+    "text": "GOAT shoes... apparently not good for ballling in though",
+    "created_at": "2021-10-22T09:24:58.481Z",
+    "sneaker": 2,
+    "owner": 1
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 7,
+  "fields": {
+    "text": "Tony Hawks says \"buy these if you wanna skate like me\"",
+    "created_at": "2021-10-22T09:25:21.627Z",
+    "sneaker": 6,
+    "owner": 1
+  }
+}
+]
