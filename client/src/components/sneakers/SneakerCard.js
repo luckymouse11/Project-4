@@ -23,7 +23,7 @@ const SneakerCard = ({ id, rotatingSneaker }) => {
   return (
     <>
       { sneaker ?
-        <div className='sneaker col-12 col-md-6 col-lg-4'>
+        <div className='sneaker col-12 col-md-6 col-lg-4 grow'>
           
           <Link to={`/sneakers/${id}`} className='card h-80 text-center'>
             <div className='card-header'>

@@ -4,7 +4,7 @@ import React from 'react'
 const Home = () => {
   return (
     <div className="hero text-center flex-grow-1 flex-grow-1 d-flex flex-column justify-content-center align-items-center">
-      <h1>Sneaker Vault</h1>
+      <h1>Welcome to the Sneaker-dom</h1>
       <div>Carousel of Shoes</div>
     </div>
   )

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-// import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
 import Select from 'react-select'
 
 import SneakerCard from './SneakerCard'
@@ -16,9 +16,9 @@ const SneakerIndex = ({ rotatingSneaker }) => {
   useEffect(() => {
     const getColours = async () => {
       try {
-        const { data } = await axios('/api/colours')
+        const { data } = await axios('/api/colours/')
         setColours(data)
-        console.log('setColours ->', data)
+        // console.log('setColours ->', data)
       } catch (err) {
         console.log(err)
       }
@@ -27,15 +27,15 @@ const SneakerIndex = ({ rotatingSneaker }) => {
   }, [])
 
   const colourOptions = colours.map(colour => (
-    { value: colour.colour, label: colour.colour, id: colour._id }
+    { value: colour.name, label: colour.name, id: colour.id }
   ))
 
   useEffect(() => {
     const getSneakers = async () => {
       try {
-        const { data } = await axios('/api/sneakers')
+        const { data } = await axios('/api/sneakers/')
         setSneaker(data)
-        console.log(data)
+        // console.log(data)
       } catch (err) {
         console.log(err)
         setHasError(true)
@@ -45,11 +45,11 @@ const SneakerIndex = ({ rotatingSneaker }) => {
   }, [])
 
   const handleMultiSelected = (selected) => {
-    const values = selected ? selected.map(item => item.value) : []
+    const values = selected ? selected.map(item => item.label) : []
 
     const filtered = sneakers.filter(sneaker => {
       return sneaker.colour.some(colour => {
-        return values.includes(colour.colour)
+        return values.includes(colour.name)
       })
     })
     values.length > 0 ? setFilteredSneakers(filtered) : setFilteredSneakers([])
@@ -58,12 +58,12 @@ const SneakerIndex = ({ rotatingSneaker }) => {
   return (
     <section className="sneaker container mt-4">
       <div>
-        <div className="row justify-content-center mb-4">
-          <h5>filter</h5>
+        <div className="row justify-content-center mb-4 filter">
+          {/* <h5>filter</h5> */}
           <Select 
             className='col-12 col-md-8 col-lg-8 center'
             options={colourOptions}
-            name='ingredients'
+            name='colours'
             isMulti='true'
             placeholder='Find sneakers by colour'
             onChange={(selected) => handleMultiSelected(selected)}
@@ -71,11 +71,11 @@ const SneakerIndex = ({ rotatingSneaker }) => {
         </div>
       </div>
 
-      <div className='row g-3'>
+      <div className="row row-eq-height g-3">
         {sneakers.length > 0 ?
           (filteredSneakers.length > 0 ? filteredSneakers : sneakers).map( sneaker => {
-            const owner = sneaker.owner
-            console.log(owner)
+            //const owner = sneaker.owner
+            //console.log(owner)
             return <SneakerCard key={sneaker.id} {...sneaker}/>
           })
 

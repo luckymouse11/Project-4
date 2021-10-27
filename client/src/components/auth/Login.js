@@ -1,7 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { useHistory, Link } from 'react-router-dom'
-// import { getPayload } from '../helpers/Auth'
 
 const Login = () => {
 
@@ -17,16 +16,13 @@ const Login = () => {
     setFormData(newObj)
   }
 
-  // const [errors, setErrors] = useState('')
-
   const handleSubmit = async(event)=>{
     event.preventDefault()
     try {
-      const { data } = await axios.post('/login', formData)
+      const { data } = await axios.post('api//auth/login/', formData)
       setTokenToLocalStorage(data.token)
       history.push('/sneakers/')
     } catch (err) {
-      // setErrors()
       console.log(err)
     }
   }
@@ -39,7 +35,7 @@ const Login = () => {
     <section className='form-page'>
       <div className='container'>
         <div className='row justify-content-center'>
-          <form onSubmit={handleSubmit} className='col-10 col-md-6 mt-4'>
+          <form onSubmit={handleSubmit} className='col-10 col-md-6 mt-4 align-middle'>
             <h2>Log in</h2>
             <div className='form-field'>
               <label htmlFor='email' className='form-label'>Email</label>
@@ -48,7 +44,6 @@ const Login = () => {
             <label htmlFor='password' className='form-label'>Password</label>
             <input type='password' className='form-control' name='password' placeholder='Password' value ={FormData.password} onInput={handleChange}/>
             <button className='submit btn btn-primary'>Log in</button>
-            {/* {errors && <p className="error">{errors}</p>} */}
             <p><Link to='/register'>Register here</Link></p>
           </form>
         </div>
