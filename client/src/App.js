@@ -3,8 +3,10 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import axios from 'axios'
 
 import Home from './components/Home'
+
 import Navbar from './components/common/Navbar'
 import Footer from './components/common/Footer'
+
 import Login from './components/auth/Login'
 import Register from './components/auth/Register'
 

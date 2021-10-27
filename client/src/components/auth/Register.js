@@ -28,8 +28,8 @@ const Register = () => {
   const handleSubmit = async(event) => {
     event.preventDefault()
     try {
-      await axios.post('/register', formData)
-      history.push('/login')
+      await axios.post('/api/auth/register/', formData)
+      history.push('/login/')
     } catch (err) {
       setErrors(err.response.data.errors)
       console.log(errors)
@@ -59,7 +59,7 @@ const Register = () => {
               <input type='password' className='form-control' name='passwordConfirmation' placeholder='Password again' value ={FormData.passwordConfirmation} onInput={handleChange}/>
             </div>
             <button className='submit btn btn-primary'>Register</button>
-            <p>Already registered? <Link to='/login'>Login</Link></p>
+            <p><Link to='/login'>Login here</Link></p>
           </form>
           
         </div>

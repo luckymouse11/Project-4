@@ -1,5 +1,15 @@
 @import '~bootstrap/scss/bootstrap';
+@import './variables.scss';
+
 @import './global.scss';
+
+@import './auth.scss';
+
 @import './common.scss';
+@import './navbar.scss';
+@import './footer.scss';
 @import './about.scss';
-@import './sneakerIndex.scss'
+
+@import './sneakerIndex.scss';
+@import './sneakerShow.scss';
+@import './sneakerCard.scss';

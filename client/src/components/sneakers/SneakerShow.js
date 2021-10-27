@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useParams, Link } from 'react-router-dom'
 
+
 const SneakerShow = ({ rotatingSneaker }) => {
   
   // State
@@ -15,7 +16,7 @@ const SneakerShow = ({ rotatingSneaker }) => {
   useEffect(() => {
     const getSneaker = async() => {
       try {
-        const { data } = await axios(`/api/sneakers/${id}`)
+        const { data } = await axios(`/api/sneakers/${id}/`)
         setSneaker(data)
       } catch (err) {
         setHasError(true)
@@ -26,36 +27,54 @@ const SneakerShow = ({ rotatingSneaker }) => {
 
   useEffect(() => console.log(sneaker), [sneaker])
 
+
   return (
     <>
       { sneaker ? 
         <>
-          <div className='sneaker-show container mt-4'>
-            <h2>{sneaker.model_name}</h2>
-            <hr />
-            <div className='row'>
-              <div className='col-12 col-md-6'>
-                <img src={sneaker.image} alt={sneaker.brand} className='col-12'/>
+          <div className="sneaker-show container mt-4">
+            <div className="row">
+              <div className="col-12 col-md-6">
+                <img src={sneaker.image} alt={sneaker.brand} className="col-12"/>
               </div>
-              <h4>💰 Last known price: £{sneaker.cost}</h4>
+              <div className="col-12 col-md-6 d-flex align-items-stretch">
+                <table className="table">
+                  <tbody>
+                    <tr>
+                      <th>Brand</th>
+                      <td>{sneaker.brand}</td>
+                    </tr>
+                    <tr>
+                      <th>Model</th>
+                      <td>{sneaker.model_name}</td>
+                    </tr>
+                    <tr>
+                      <th>Last known price</th>
+                      <td>£{sneaker.cost}</td>
+                    </tr>
+                    <tr>
+                      <th>Release Year:</th>
+                      <td>{sneaker.release_date}</td>
+                    </tr>
+                    <tr>
+                      <th>Colours</th>
+                      <td className="list-unstyled">{sneaker.colour.map(colour => <li key={colour.id}>{colour.name}</li>)}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div>
               <hr />
-              <h4><span>📅 </span> Release: {sneaker.release_date}</h4>
-              <hr />
-              <h4><span>🎨</span> Key Colours</h4>
-              <p>{sneaker.colour.name}</p>
-              <hr />
-              <h4><span>🌍</span></h4>
-              <p>This sneaker is from: <a href={sneaker.url}>{sneaker.url}</a></p>
-              <hr />
-              <h4><span>📝</span> Description</h4>
+              <h4>Description</h4>
               <p>{sneaker.description}</p>
               <hr />
-              <h4><span>🧑‍🍳</span> Added by</h4>
+              <h4>Added by</h4>
               <p><Link to={`/users/${sneaker.owner._id}`}>{sneaker.owner.username}</Link></p>
               <hr />
-              <Link to='/sneakers' className='btn btn-primary orange-button'>Back to sneakers</Link>
+              <Link to="/sneakers" className="btn btn-primary">Back to sneakers</Link>
             </div>
-            <hr />
           </div>
           <div className="reviews">
             <h4>Comments</h4>
@@ -67,9 +86,9 @@ const SneakerShow = ({ rotatingSneaker }) => {
         :
         <>
           {hasError ? 
-            <h2 className='display-5 text-center'>Oh! Something went wrong</h2> 
+            <h2 className="display-5 text-center">Oh! Something went wrong</h2> 
             : 
-            <img className='rotatingSneaker' src={rotatingSneaker} alt='Rotating Sneaker gif' />
+            <img className="rotatingSneaker" src={rotatingSneaker} alt="Rotating Sneaker gif" />
           }
         </>
       }
