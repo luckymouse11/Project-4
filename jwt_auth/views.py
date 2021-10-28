@@ -7,8 +7,23 @@ from django.contrib.auth import get_user_model
 from django.conf import settings
 import jwt
 
+# from sneakers.serializers.common import SneakerSerializer
+
+
 from .serializers.common import UserSerializer
 User = get_user_model()
+
+
+# Add Sneaker
+# class AddsneakerView(APIView):
+
+#     def post(self, request):
+#         sneaker_to_create = SneakerSerializer(data=request.data)
+#         if sneaker_to_create.is_valid():
+#             sneaker_to_create.save()
+#             return Response({'message': 'Sneaker has been saved'}, status=status.HTTP_202_ACCEPTED)
+#         return Response(sneaker_to_create.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
 
 # REGISTER
 class RegisterView(APIView):

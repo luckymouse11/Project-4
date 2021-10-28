@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { useParams, Link } from 'react-router-dom'
+import { useHistory, useParams, Link } from 'react-router-dom'
 
 
 const SneakerShow = ({ rotatingSneaker }) => {
@@ -9,6 +9,31 @@ const SneakerShow = ({ rotatingSneaker }) => {
   const [ sneaker, setSneaker ] = useState(null)
   const [ hasError, setHasError ] = useState(false)
 
+  const [formData, setFormData] = useState({
+    text: '',
+  })
+
+  const [errors, setErrors] = useState({
+    text: '',
+  })
+
+  const handleChange = (event) => {
+    const newObj = { ...formData, [event.target.name]: event.target.value }
+    setFormData(newObj)
+  }
+
+  const history = useHistory()
+
+  const handleSubmit = async(event) => {
+    event.preventDefault()
+    try {
+      await axios.post('/api/reviews/', formData)
+      history.push(`/sneaker/${id}`)
+    } catch (err) {
+      setErrors(err.response.data.errors)
+      console.log(errors)
+    }
+  }
 
   // Params
   const { id } = useParams()
@@ -72,17 +97,34 @@ const SneakerShow = ({ rotatingSneaker }) => {
               <hr />
               <h4>Added by</h4>
               <p><Link to={`/users/${sneaker.owner._id}`}>{sneaker.owner.username}</Link></p>
-              <hr />
+              <hr className="col-12 col-md-6"/>
               <Link to="/sneakers" className="btn btn-primary">Back to sneakers</Link>
+              <br />
+              <br />
+              <h4>Comments</h4>
+              <div className="col-12 col-md-6">
+                {sneaker.reviews.map(review => 
+                  <p key={review.id} className="d-flex flex-column">
+                    {review.owner.username}:
+                    <br/>
+                    {review.text}
+                  </p>
+                )}
+              </div>
+              <hr className="col-12 col-md-6"/>
+
+
+
+              <form onSubmit={handleSubmit} className="col-10 col-md-6 mt-4" method="POST" encType="multipart/form-data">
+                <textarea className="form-control" name="comment" placeholder="Add a comment" value ={FormData.text} onInput={handleChange}/>
+                <button className="btn btn-primary mt-3" name="postComment" type="submit">COMMENT</button>
+              </form>
+
+
+
             </div>
           </div>
-          <div className="reviews">
-            <h4>Comments</h4>
-            <p>{sneaker.reviews.sneaker}</p>
-            <p>{sneaker.owner.username}</p>
-          </div>
         </>
-        
         :
         <>
           {hasError ? 

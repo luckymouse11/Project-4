@@ -18,6 +18,7 @@ import About from './components/about/About'
 // Images
 import rotatingSneaker from './images/rotatingSneaker.gif'
 
+
 function App() {
   useEffect(() => {
     const getData = async () => {
@@ -26,6 +27,7 @@ function App() {
     }
     getData()
   })
+
 
   return (
     <div className="site-wrapper">
