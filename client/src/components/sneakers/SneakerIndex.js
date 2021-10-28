@@ -59,7 +59,6 @@ const SneakerIndex = ({ rotatingSneaker }) => {
     <section className="sneaker container mt-4">
       <div>
         <div className="row justify-content-center mb-4 filter">
-          {/* <h5>filter</h5> */}
           <Select 
             className='col-12 col-md-8 col-lg-8 center'
             options={colourOptions}
@@ -74,8 +73,6 @@ const SneakerIndex = ({ rotatingSneaker }) => {
       <div className="row row-eq-height g-3">
         {sneakers.length > 0 ?
           (filteredSneakers.length > 0 ? filteredSneakers : sneakers).map( sneaker => {
-            //const owner = sneaker.owner
-            //console.log(owner)
             return <SneakerCard key={sneaker.id} {...sneaker}/>
           })
 
