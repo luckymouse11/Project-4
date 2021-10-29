@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { useHistory, useParams, Link } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
+// import { useHistory, useParams, Link } from 'react-router-dom'
 
 
 const SneakerShow = ({ rotatingSneaker }) => {
@@ -22,13 +23,24 @@ const SneakerShow = ({ rotatingSneaker }) => {
     setFormData(newObj)
   }
 
-  const history = useHistory()
+  // const history = useHistory()
 
   const handleSubmit = async(event) => {
     event.preventDefault()
     try {
-      await axios.post('/api/reviews/', formData)
-      history.push(`/sneaker/${id}`)
+      formData['sneaker'] = sneaker.id
+      formData['text'] = formData.comment
+      const token = window.localStorage.getItem('token')
+      const config = {
+        headers: { Authorization: `Bearer ${token}` },
+      }
+      const res = await axios.post('/api/reviews/', formData, config)
+      const newSneaker = {
+        ...sneaker,
+        reviews: [...sneaker.reviews, res.data],
+      }
+      setSneaker(newSneaker)
+      location.reload()
     } catch (err) {
       setErrors(err.response.data.errors)
       console.log(errors)

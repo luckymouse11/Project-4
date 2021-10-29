@@ -16,7 +16,9 @@ const Nav = () => {
   const handleLogout = () => {
     window.localStorage.removeItem('token')
     history.push('/')
+    // location.reload()
   }
+  
 
   return (
     <nav className="navbar navbar-expand-sm justify-content-between bb-3">
