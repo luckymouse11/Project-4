@@ -20,20 +20,35 @@ const About = () => {
         </article>
         <br />
         <br />
-        <article className="article mt-4 ">
+        <article className="article mt-4">
           <h2>creator</h2>
           
           
           <p>
             this website was created by victor liew, a general assembly student. the fourth and final project of the course displaying the knowledge of a 
             newly crowned &quot;full stack software engineer&quot;
-
-
-            <br />
-
-
+            <br/>
+            <br/>
+            <div className="d-flex justify-content-center">
+              <img className="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain-wordmark.svg" />
+              <img className="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-original.svg" />
+              <img className="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+              <img className="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain-wordmark.svg" />
+            </div>
+            <br/>
+            <div className="d-flex justify-content-center">
+              <img className="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+              <img className="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
+              <img className="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
+              <img className="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+              <img className="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" />
+            </div>
+            <br/>
+            <div className="d-flex justify-content-center">
+              <img className="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" />
+              <img className="devicon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original-wordmark.svg" />
+            </div>
           </p>
-          <br />
           <br />
           <div>
             <h3>victor liew</h3>

@@ -1,19 +1,22 @@
 .hero{
   color: $yellow;
+  display: flex;
+  align-items: center;
 }
 
-.carousel .slider-wrapper{
-  width: 50%;
-}
+// .carousel .slider-wrapper{
+//   width: 50%;
+// }
 
-.carousel-wrapper{
-  width: 50%;
-}
+// .carousel-wrapper{
+//   width: 50%;
+//   display: flex;
+// }
 
 .carousel-status{
-  width: 50%;
+  display: none;
 }
 
-img{
-  width: 50%;
+.carousel-root{
+  width: 58vh;
 }

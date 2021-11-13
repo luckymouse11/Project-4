@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
+// import axios from 'axios'
 import { Link, useHistory, useLocation } from 'react-router-dom'
+// import Select from 'react-select'
 import { userIsAuthenticated } from '../helpers/Auth.js'
 
 const Nav = () => {
@@ -19,6 +21,28 @@ const Nav = () => {
     // location.reload()
   }
   
+
+  // const [ brands, setBrands ] = useState([])
+
+  // useEffect(() => {
+  //   const getBrands = async () => {
+  //     try {
+  //       const { data } = await axios('/api/sneakers/')
+  //       setBrands(data)
+  //     } catch (err) {
+  //       console.log(err)
+  //     }
+  //   }
+  //   getBrands()
+  // }, [])
+
+  // const brandOptions = brands.map(brand => (
+  //   { value: brand.name, id: brand.id }
+  // ))
+
+
+
+
 
   return (
     <nav className="navbar navbar-expand-sm justify-content-between bb-3">
