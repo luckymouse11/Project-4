@@ -54,5 +54,47 @@
   "fields": {
     "name": "Green"
   }
+},
+{
+  "model": "colours.colour",
+  "pk": 9,
+  "fields": {
+    "name": "Blue"
+  }
+},
+{
+  "model": "colours.colour",
+  "pk": 10,
+  "fields": {
+    "name": "Pink"
+  }
+},
+{
+  "model": "colours.colour",
+  "pk": 11,
+  "fields": {
+    "name": "Maroon"
+  }
+},
+{
+  "model": "colours.colour",
+  "pk": 12,
+  "fields": {
+    "name": "Turquoise"
+  }
+},
+{
+  "model": "colours.colour",
+  "pk": 13,
+  "fields": {
+    "name": "Grey"
+  }
+},
+{
+  "model": "colours.colour",
+  "pk": 14,
+  "fields": {
+    "name": "Brown"
+  }
 }
 ]

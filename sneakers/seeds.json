@@ -8,7 +8,8 @@
     "description": "The Dame 7 EXTPLY: Opponent Advisory shoes from adidas Basketball send a message to any opposition on the court. These basketball shoes pair a superlight Lightstrike midsole with an all-black upper that shows off a bright-white print communicating the only thing Dame wants you to know if you're trying to guard him: Opponent discretion is strongly advised. Don't say he didn't warn you.",
     "release_date": 2021,
     "cost": 90.0,
-    "image": "oppadv.jpg",
+    "image": "https://res.cloudinary.com/yl/image/upload/v1635207394/sneakers/Dame_7_EXTPLY_OppAdv_tnsufg.png",
+    "owner": 1,
     "colour": [
       1,
       2,
@@ -22,10 +23,11 @@
   "fields": {
     "model_name": "Air Jordan 1 High Retro Chicago",
     "brand": "Nike",
-    "description": "The first Air Jordan was produced for Michael Jordan during his time with the Chicago Bulls in 1984 and designed by Peter C. Moore.[7] The red and black colorway of the Nike Air Ship, the prototype for the Jordan I, was later outlawed by then-NBA Commissioner David Stern for having very little white on them. (This rule, known as the \\\"51 percent\\\" rule, was repealed in the late 2000s.)",
+    "description": "The first Air Jordan was produced for Michael Jordan during his time with the Chicago Bulls in 1984 and designed by Peter C. Moore. The red and black colorway of the Nike Air Ship, the prototype for the Jordan I, was later outlawed by then-NBA Commissioner David Stern for having very little white on them. (This rule, known as the \"51 percent\" rule, was repealed in the late 2000s.)",
     "release_date": 1985,
     "cost": 33934.0,
-    "image": "AJ1-chi.jpg",
+    "image": "https://res.cloudinary.com/yl/image/upload/v1635206876/sneakers/Air_Jordan_1_Retro_Chicago-removebg-preview_bgzfhw.png",
+    "owner": 1,
     "colour": [
       1,
       2,
@@ -37,12 +39,13 @@
   "model": "sneakers.sneaker",
   "pk": 3,
   "fields": {
-    "model_name": "Gundam SB Dunk",
+    "model_name": "Gundam x Nike SB Dunk High In White",
     "brand": "Nike",
     "description": "In the late 1970s, Gundam re-defined anime culture and launched the Tokyo, Japan-based brand's futuristic vision across the globe. Defined by a synergy between compelling storytelling and expert design, Gundam's work with animation and toy design shaped collector culture for decades and continues to inspire and innovate. The \"Gundam\" SB Dunk High is a testament to imagination and work ethic, and brings DIY inspiration and science-fiction fashion to an iconic line of eccentric SB Dunks. With a removable Swoosh—each stylised to dramatically alter the silhouette, depending on if you want to go bright or tactically clean—this sneaker is ready to suit up and go mobile. The \"Gundam\" Dunk honours tradition and the synergy between Nike SB and Gundam collector culture—from the toe box detailing, flashes of colour and the accompanying decal sheet that's recognisably real robotic.",
     "release_date": 2021,
     "cost": 99.95,
-    "image": "gundamSBDunk.jpg",
+    "image": "https://res.cloudinary.com/yl/image/upload/v1635207399/sneakers/Nike_SB_Dunk_High_Gundam_kyrwzn.png",
+    "owner": 1,
     "colour": [
       1,
       2,
@@ -60,7 +63,8 @@
     "description": "The Nike Zoom LeBron Soldier 10 debuted in 2016 as LeBron James' NBA Finals sneaker. The performance basketball model features three lockdown straps at the forefoot, midfoot and ankle, a Tri-layer foam upper with an embedded compression inner-sleeve, and Zoom Air in the heel and forefoot. LeBron James wore the Soldier 10 throughout the 2016 NBA Finals en route to his third overall NBA championship, his third NBA Finals MVP and the first NBA championship for the Cleveland Cavaliers.",
     "release_date": 2016,
     "cost": 150.0,
-    "image": "LBJSoldier10.jpg",
+    "image": "https://res.cloudinary.com/yl/image/upload/v1635207401/sneakers/Nike_Zoom_LeBron_Soldier_10_gvto06.png",
+    "owner": 1,
     "colour": [
       1,
       2,
@@ -77,7 +81,8 @@
     "description": "LeBron's high-performance engine needs a light yet strong frame to help harness and direct his force. The LeBron 18 Low brings back the 17's cushioning system to provide an optimal balance of comfort, impact cushioning and responsiveness. The upper combines a mix of lightweight materials, no-sew overlays and a structured heel to provide full-foot containment without sacrificing ankle mobility.",
     "release_date": 2021,
     "cost": 144.95,
-    "image": "LBJ18-stewie.jpg",
+    "image": "https://res.cloudinary.com/yl/image/upload/v1635207397/sneakers/Nike_Lebron_18_Low_q8ycza.png",
+    "owner": 1,
     "colour": [
       2
     ]
@@ -92,7 +97,8 @@
     "description": "The first to bear the iconic side stripe, the Vans Old Skool is a low top, lace-up shoe. It is lined, has padded collars for support and flexibility, re-enforced toecaps to withstand repeated wear, and features the Vans signature waffle outsole for a firmer grip.",
     "release_date": 2016,
     "cost": 65.0,
-    "image": "OldSkool.jpg",
+    "image": "https://res.cloudinary.com/yl/image/upload/v1635207406/sneakers/Vans_Old_Skool_xtxxal.png",
+    "owner": 1,
     "colour": [
       1,
       2
@@ -108,13 +114,15 @@
     "description": "The Court Rider Rugrat mixes design cues from PUMA's iconic Future Rider with colours and detailing inspired by the Rugrats, those cheeky toddlers we fell in love with in the '90s. With PUMA's technology under the hood delivering stability, traction and shock-absorbing bounce just where you need it, you'll be shooting hoops or hitting the streets in eye-catching style and comfort.",
     "release_date": 2021,
     "cost": 85.0,
-    "image": "puma-rugrat.jpg",
+    "image": "https://res.cloudinary.com/yl/image/upload/v1635207403/sneakers/Puma_Court_Rider_Rugrat_gtgzcu.png",
+    "owner": 1,
     "colour": [
       2,
       4,
       6,
       7,
-      8
+      8,
+      9
     ]
   }
 },
@@ -127,7 +135,8 @@
     "description": "Coming off two straight titles and another stop at the top of the podium, Kobe Bryant returned to Hollywood ready to keep working. His drive for victory remained continually evident, even influencing the innovative Kobe 8 he laced up in constant pursuit of victory.",
     "release_date": 2016,
     "cost": 165.0,
-    "image": "kobe8FTB.jpg",
+    "image": "https://res.cloudinary.com/yl/image/upload/v1635207395/sneakers/Nike_Kobe_8_FTB_tt2oqs.png",
+    "owner": 1,
     "colour": [
       6
     ]
@@ -142,10 +151,11 @@
     "description": "A unique and modern style with understated details. Macbeth took a classic style one step further by designing an oxford upper on their signature low profile vulcanized outsole. For a more tailored look, materials play a key role and are applied as all over repeats with bindings, discreet linings and embroidered patches. With a custom heel and tongue logo patches, these shoes will provide a simple, yet stylish addition to your wardrobe",
     "release_date": 2009,
     "cost": 50.0,
-    "image": "wallister.jpg",
+    "image": "https://res.cloudinary.com/yl/image/upload/v1635207407/sneakers/wallister-blue_g2lpc6.png",
+    "owner": 1,
     "colour": [
-      8,
-      1
+      1,
+      9
     ]
   }
 },
@@ -158,7 +168,8 @@
     "description": "Cop some fresh style from Mr. Style himself with these Chad Muska Red Carpet Edition Supra Skytop skate shoes. Designed using a weather and abrasion resistant black Tuf high top upper for insane durability and a SupraFoam injected midsole for trustworthy impact protection so can go big worry-free.",
     "release_date": 2010,
     "cost": 120.0,
-    "image": "skytop-redcarpet.jpg",
+    "image": "https://res.cloudinary.com/yl/image/upload/v1635207785/sneakers/skytop-redcarpet_vufpmp.png",
+    "owner": 1,
     "colour": [
       1,
       3
@@ -170,15 +181,16 @@
   "pk": 11,
   "fields": {
     "model_name": "Stabil Next Gen Primeblue",
-    "brand": "adidas",
+    "brand": "Adidas",
     "description": "You already own the court. Lacing up these adidas Stabil Next Gen indoor shoes merely confirms your dominance. Heat-pressed sidewalls on their foot-hugging Primeknit upper will support you through every cut and sidestep. Underneath, EVA surrounds an energy-returning Boost midsole for the perfect blend of agility and stability.",
     "release_date": 2021,
     "cost": 120.0,
-    "image": "stabil.jpg",
+    "image": "https://res.cloudinary.com/yl/image/upload/v1635207622/sneakers/Adidas_Stabil_Next_Gen_Prime_l5pnex.png",
+    "owner": 1,
     "colour": [
       1,
       2,
-      3
+      7
     ]
   }
 }
