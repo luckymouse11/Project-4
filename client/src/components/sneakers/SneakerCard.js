@@ -1,41 +1,44 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
+// import React, { useState, useEffect } from 'react'
+import React from 'react'
+// import axios from 'axios'
 import { Link } from 'react-router-dom'
 
-const SneakerCard = ({ id, rotatingSneaker }) => {
+// const SneakerCard = ({ id, release_date: releaseDate, model_name: modelName, brand, cost, image, rotatingSneaker }) => {
+const SneakerCard = ({ id, release_date: releaseDate, model_name: modelName, brand, cost, image }) => {
+
   
   // State
-  const [ sneaker, setSneaker ] = useState(null)
-  const [ hasError, setHasError ] = useState(false)
+  // const [ sneaker, setSneaker ] = useState(null)
+  // const [ hasError, setHasError ] = useState(false)
 
-  useEffect(() => {
-    const getSneaker = async() => {
-      try {
-        const { data } = await axios(`/api/sneakers/${id}`)
-        setSneaker(data)
-      } catch (err) {
-        setHasError(true)
-      }
-    }
-    getSneaker()
-  }, [id])
+  // useEffect(() => {
+  //   const getSneaker = async() => {
+  //     try {
+  //       const { data } = await axios(`/api/sneakers/${id}`)
+  //       setSneaker(data)
+  //     } catch (err) {
+  //       setHasError(true)
+  //     }
+  //   }
+  //   getSneaker()
+  // }, [id])
 
   return (
     <>
-      { sneaker ?
-        <div className='sneaker col-12 col-md-6 col-lg-4 grow'>
+      {/* { sneaker ? */}
+      <div className='sneaker col-12 col-md-6 col-lg-4 grow'>
           
-          <Link to={`/sneakers/${id}`} className='card h-80 text-center'>
-            <div className='card-header'>
-              <h5 className='mt-2'>{sneaker.release_date}<br />{sneaker.brand}<br/>{sneaker.model_name}</h5>
-            </div>
-            <img src={sneaker.image} alt={`${sneaker.model_name}`} className='card-image p-2'></img>
-            <div className="card-footer">
-              <p>£{sneaker.cost}</p>
-            </div>
-          </Link>
-        </div>
-
+        <Link to={`/sneakers/${id}`} className='card h-80 text-center'>
+          <div className='card-header'>
+            <h5 className='mt-2'>{releaseDate}<br />{brand}<br/>{modelName}</h5>
+          </div>
+          <img src={image} alt={`${modelName}`} className='card-image p-2'></img>
+          <div className="card-footer">
+            <p>£{cost}</p>
+          </div>
+        </Link>
+      </div>
+      {/* 
         :
 
         <>
@@ -46,7 +49,7 @@ const SneakerCard = ({ id, rotatingSneaker }) => {
           }
         </>
 
-      }
+      } */}
     </>
   )
 }
