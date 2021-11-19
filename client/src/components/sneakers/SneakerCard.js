@@ -54,4 +54,5 @@ const SneakerCard = ({ id, release_date: releaseDate, model_name: modelName, bra
   )
 }
 
+
 export default SneakerCard
