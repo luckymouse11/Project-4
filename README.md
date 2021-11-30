@@ -25,16 +25,20 @@ The final project of the GA Software Engineering Immersive, I was tasked with cr
 
 ## Instructions for Use
 ### Login and Register
+For users of the site to register and login. This will give them authorisation to comment on sneakers. Future functionality will allow users to also add their own sneakers.
 ![register](./client/src/images/p4-register.png)
 ![login](./client/src/images/p4-login.png)
 
 ### Index page
+This page displays the many to many relationships interacting to show certain sneakers. Users can use the React multi select bar to click or type colours of sneakers that they want displayed.
 ![sneakerindex](./client/src/images/p4-sneakerindex.png)
 
 ### Sneaker page
+Page showing the up to date information of a sneaker, from the description to the original release year and last known price.
 ![sneakershow](./client/src/images/p4-sneakershow.png)
 
 ### Comment section
+For users to comment and review on sneakers, giving their opinions on trending sneakers.
 ![comment section](./client/src/images/p4-commentsection.png)
 
 
@@ -83,4 +87,3 @@ A work-around I had to implement was the use of "Ngrok" which would expose the l
 - Pay close attention to updates that occur, taking note of exactly what is being updated (particularly when using Brew). Run checks to see if code works after updates are made.
 - Setting targets to achieve building a minimum viable product.
 - Asking for help when needed, even if it's to get a push in the right direction.
-
