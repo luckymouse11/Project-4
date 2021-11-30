@@ -25,17 +25,17 @@ The final project of the GA Software Engineering Immersive, I was tasked with cr
 
 ## Instructions for Use
 ### Login and Register
-![register](./src/images/p4-register.png)
-![login](./src/images/p4-login.png)
+![register](./client/src/images/p4-register.png)
+![login](./client/src/images/p4-login.png)
 
 ### Index page
-![sneakerindex](./src/images/p4-sneakerindex.png)
+![sneakerindex](./client/src/images/p4-sneakerindex.png)
 
 ### Sneaker page
-![sneakershow](./src/images/p4-sneakershow.png)
+![sneakershow](./client/src/images/p4-sneakershow.png)
 
 ### Comment section
-![comment section](./src/images/p4-commentsection.png)
+![comment section](./client/src/images/p4-commentsection.png)
 
 
 ## Process
@@ -43,20 +43,20 @@ The final project of the GA Software Engineering Immersive, I was tasked with cr
 
 Day 1 of the project was used for the planning stages. The first step was to create a database diagram displaying the "one to many" and "many to many" relationships. In order to better display this, I used QuickDBD to create an Entity Relationship Diagram.
 
-![db design](./src/images/p4-dbdesign.png)
+![db design](./client/src/images/p4-dbdesign.png)
 
 Once this was done, I used Jamboard to create a wireframe of what I would want my app to look like and have a visual for what I would want to link and to where.
 
-![jamboard](./src/images/p4-jamboard.png)
+![jamboard](./client/src/images/p4-jamboard.png)
 
 ### Coding
 
  - I started coding on the second day of the project, after the planning stage was completed. Starting with the backend I created "jwt_auth", "colours", "sneakers", "reviews". The order was important as, for example, a review cannot exist with a sneaker. Similarly, creating sneakers before colours would mean the colour can not be assigned to the sneaker without reseeding.
-![backend-sneaker-model](./src/images/p4-backend-sneaker-model.png)
+![backend-sneaker-model](./client/src/images/p4-backend-sneaker-model.png)
 
 
 - Whilst creating the frontend with React, fleshing out the main components was relatively comfortable. One of the trickier parts to deal with was the comments section. Whilst I was able to get new comments to display they would often display without the poster's username. With a deadline in mind I decided to work around this issue by forcing a page reload which would re render the page and display the username alongside the comment.
-![comment-section](./src/images/p4-commentcode.png)
+![comment-section](./client/src/images/p4-commentcode.png)
 
 
 ## Known Errors/Bugs:
